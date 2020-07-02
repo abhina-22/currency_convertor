@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous"
+/>
+
+<!-- Optional theme -->
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous"
+/>
+
 <html>
   <head>
     <title>Currency convertor</title>
@@ -6,17 +22,29 @@
       body {
         font-family: "sans-serif";
         font-size: 100%;
-        width: 100%;
+        width: 200px;
+        height: 150px;
       }
     </style>
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>
-      Currency convertor!!
-    </h1>
-    <input type="text" placeholder="Enter the currency in usd" id="usd" />
-    <button id="covert" value="submit" type="submit">Convert to Inr</button>
-    <p id="p2"></p>
+    <div class="container">
+      <h4>
+        Currency convertor!!
+      </h4>
+      <div class="form-group">
+        <label>
+          Currency in USD
+        </label>
+        <input type="number" />
+      </div>
+      <di class="form-group">
+        <button id="covert" class="btn btn-success">
+          Convert to Inr
+        </button>
+      </di>
+      <p id="p2"></p>
+    </div>
   </body>
 </html>
